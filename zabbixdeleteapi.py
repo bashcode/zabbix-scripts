@@ -1,3 +1,4 @@
+#!/bin/python
 from pyzabbix import ZabbixAPI
 zapi = ZabbixAPI("http://zabbix.theserverguy.com/zabbix")
 zapi.login("admin", "divyanshu@theserverguy.com")
