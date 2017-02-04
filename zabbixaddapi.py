@@ -1,8 +1,8 @@
 #!/bin/python
 from pyzabbix import ZabbixAPI
 
-zapi = ZabbixAPI("http://zabbix.theserverguy.com/zabbix")
-zapi.login("admin", "divyanshu@theserverguy.com")
+zapi = ZabbixAPI("http://url")
+zapi.login("username", "password")
 print("Connected to Zabbix API Version %s" % zapi.api_version())
 for hostids in zapi.host.create({ 
 'host': "testpythonapi", 
